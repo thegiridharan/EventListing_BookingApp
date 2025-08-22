@@ -31,3 +31,12 @@ The project was initially generated using Lovable AI and extracted to GitHub for
 - CSS (Responsive design with mobile-first approach)  
 - Mock API backend  
 - Optional: TypeScript, animation libraries
+
+- -
+
+## Setup Instructions
+# Use these commands to run locally.
+
+`git clone https://github.com/thegiridharan/Eventide/`
+`npm install`
+`npm run dev`
