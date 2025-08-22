@@ -37,6 +37,10 @@ const ServiceCard = ({ service, onViewDetails }: ServiceCardProps) => {
           src={service.images[0]}
           alt={service.name}
           className="w-full h-48 object-cover transition-smooth group-hover:scale-105"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop';
+          }}
         />
         
         {/* Category Badge */}

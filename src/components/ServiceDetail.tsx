@@ -50,6 +50,10 @@ const ServiceDetail = ({ service, isOpen, onClose, onBookNow }: ServiceDetailPro
               src={service.images[currentImageIndex]}
               alt={`${service.name} - Image ${currentImageIndex + 1}`}
               className="w-full h-full object-cover"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=600&fit=crop';
+              }}
             />
             
             {/* Image Navigation */}

@@ -105,7 +105,7 @@ export const mockServices: Service[] = [
     location: 'Chicago, IL',
     description: 'Specializing in candid, natural photography that tells your unique story with authentic emotion.',
     images: [
-      'https://images.unsplash.com/photo-1542038784456-1ea8e7412e?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1542038784456-1ea8e0c7412e?w=800&h=600&fit=crop',
       'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&h=600&fit=crop'
     ],
     availability: ['2024-03-17', '2024-03-24', '2024-04-07', '2024-04-14'],
