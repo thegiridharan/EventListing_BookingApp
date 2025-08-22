@@ -8,7 +8,7 @@ The project was initially generated using Lovable AI and extracted to GitHub for
 ---
 
 # Setup Instructions
-## Use these commands to run locally.
+## Follow the steps to run locally.
 
 - Step1: `git clone https://github.com/thegiridharan/Eventide/`
 - Step2: `npm install`
