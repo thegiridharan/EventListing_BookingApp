@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+Event Listing & Booking Web Application
+Overview
+This is a responsive React-based web application for browsing and booking event services such as DJs, Photographers, and Caterers. It features a rich UI with service listings, detailed modals, and a multi-step booking form.
 
-## Project info
+The project was initially generated using Lovable AI and extracted to GitHub for deployment and further customization.
 
-**URL**: https://lovable.dev/projects/f3829883-d019-4b74-890f-4f4d0b6094e2
+Features
+Service Listing Page with filter options (price, rating, category, location) and search with debounce
 
-## How can I edit this code?
+Detailed Service Modal including image carousel, reviews with pagination, availability calendar, and booking button
 
-There are several ways of editing your application.
+Multi-step Booking Flow with date/time selection, guest details, contact info, and confirmation summary
 
-**Use Lovable**
+Responsive, mobile-first design
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f3829883-d019-4b74-890f-4f4d0b6094e2) and start prompting.
+State management using React Context API
 
-Changes made via Lovable will be committed automatically to this repo.
+Mock API calls with loading and error handling
 
-**Use your preferred IDE**
+Form validation with user-friendly feedback
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Bonus Enhancements (if implemented)
+TypeScript support
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Smooth animations and transitions
 
-Follow these steps:
+Dark mode toggle
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Accessibility improvements
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Tech Stack
+React.js with Hooks (useState, useEffect, useContext)
 
-# Step 3: Install the necessary dependencies.
-npm i
+CSS (Responsive design with mobile-first approach)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Mock API backend
 
-**Edit a file directly in GitHub**
+Optional: TypeScript, animation libraries
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Deployment
+This project can be deployed easily on platforms like Vercel or Netlify with direct GitHub integration.
 
-**Use GitHub Codespaces**
+Deploy on Vercel (Recommended)
+Go to vercel.com and sign up/log in
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Connect your GitHub repository containing this project
 
-## What technologies are used for this project?
+Import the repository and let Vercel auto-detect the React framework
 
-This project is built with:
+Click "Deploy" to publish your app with continuous deployment enabled
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f3829883-d019-4b74-890f-4f4d0b6094e2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
