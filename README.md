@@ -1,18 +1,18 @@
 # Event Listing & Booking Web Application
 
-## Overview  
-This is a responsive React-based web application for browsing and booking event services such as DJs, Photographers, and Caterers. It features a rich UI with service listings, detailed modals, and a multi-step booking form.
-
-The project was initially generated using Lovable AI and extracted to GitHub for deployment and further customization.
-
----
-
 # Setup Instructions
 ## Follow the steps to run locally.
 
 - Step1: `git clone https://github.com/thegiridharan/Eventide/`
 - Step2: `npm install`
 - Step3: `npm run dev`
+
+---
+
+## Overview  
+This is a responsive React-based web application for browsing and booking event services such as DJs, Photographers, and Caterers. It features a rich UI with service listings, detailed modals, and a multi-step booking form.
+
+The project was initially generated using Lovable AI and extracted to GitHub for deployment and further customization.
 
 ---
 
