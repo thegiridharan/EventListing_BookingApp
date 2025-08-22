@@ -5,6 +5,15 @@ This is a responsive React-based web application for browsing and booking event 
 
 The project was initially generated using Lovable AI and extracted to GitHub for deployment and further customization.
 
+--
+
+# Setup Instructions
+## Use these commands to run locally.
+
+`git clone https://github.com/thegiridharan/Eventide/`
+`npm install`
+`npm run dev`
+
 ---
 
 ## Features
@@ -31,12 +40,3 @@ The project was initially generated using Lovable AI and extracted to GitHub for
 - CSS (Responsive design with mobile-first approach)  
 - Mock API backend  
 - Optional: TypeScript, animation libraries
-
-- -
-
-## Setup Instructions
-# Use these commands to run locally.
-
-`git clone https://github.com/thegiridharan/Eventide/`
-`npm install`
-`npm run dev`
