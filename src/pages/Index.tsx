@@ -1,12 +1,73 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import Hero from '@/components/Hero';
+import ServiceList from '@/components/ServiceList';
+import ServiceDetail from '@/components/ServiceDetail';
+import BookingForm from '@/components/BookingForm';
+import { mockServices, Service } from '@/data/mockData';
 
 const Index = () => {
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+  const [showServiceDetail, setShowServiceDetail] = useState(false);
+  const [showBookingForm, setShowBookingForm] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [locationFilter, setLocationFilter] = useState('');
+
+  const handleServiceSelect = (service: Service) => {
+    setSelectedService(service);
+    setShowServiceDetail(true);
+  };
+
+  const handleBookNow = (service: Service) => {
+    setSelectedService(service);
+    setShowServiceDetail(false);
+    setShowBookingForm(true);
+  };
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+
+  const handleLocationFilter = (location: string) => {
+    setLocationFilter(location);
+  };
+
+  const handleCloseModals = () => {
+    setShowServiceDetail(false);
+    setShowBookingForm(false);
+    setSelectedService(null);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <Hero 
+        onSearch={handleSearch}
+        onLocationFilter={handleLocationFilter}
+      />
+
+      {/* Service Listing */}
+      <ServiceList
+        services={mockServices}
+        onServiceSelect={handleServiceSelect}
+        searchQuery={searchQuery}
+        locationFilter={locationFilter}
+        onSearchQueryChange={setSearchQuery}
+      />
+
+      {/* Service Detail Modal */}
+      <ServiceDetail
+        service={selectedService}
+        isOpen={showServiceDetail}
+        onClose={handleCloseModals}
+        onBookNow={handleBookNow}
+      />
+
+      {/* Booking Form Modal */}
+      <BookingForm
+        service={selectedService}
+        isOpen={showBookingForm}
+        onClose={handleCloseModals}
+      />
     </div>
   );
 };
